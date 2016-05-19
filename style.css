@@ -3,37 +3,58 @@ body {
   background-image: url(assets/ow_bg2.jpg);
   background-position: center;
   background-repeat: repeat;
-  font-family: 'Futura', 'Open Sans', sans-serif;
 }
-p {
-  font-size: 10px;
-}
+
 h1 {
   font-size: 48px;
 }
-h2 {
-  font-size: 24px;
+
+body, h1, h2, h3, h4, h5, p{
+  font-family: "Noto Sans CJK SC", "Microsoft YaHei", "微软雅黑","Helvetica Neue",Helvetica,sans-serif;
 }
+
+
+
+html,body{
+  height: 100%;
+  max-width: 800px;
+  margin: 0;
+  margin-right: auto;
+    margin-left: auto;
+  padding: 0;
+}
+
 a {
-  text-decoration: none;
-  color: inherit;
+  color:  #ffc70e;
 }
-div {
-  text-align: center;
-  position: relative;
+
+
+#main {
+ position: relative;
+ height: auto;  
+ min-height:100%;
+ _height:100%; 
 }
+
+#content{  
+   padding-bottom: 60px; 
+}  
+
 .countdownTime {
   text-align: inherit;
   padding: 10px;
   font-size: 22px;
 }
+
 .countdownTimeLabel {
   color: #ffc70e;
   font-size: 22px;
 }
+
 .number {
   font-size: 54px;
 }
+
 .solidbutton-orange {
   background-color: #ffc70e;
   color: #511616;
@@ -59,20 +80,22 @@ div {
 }
 .purchaselink {
   position: relative;
-  top: 40%;
+
 }
 .amazonlink {
   font-style: italic;
 }
 #welcome {
-  top: 16%;
+  padding-top: 20%;
+
 }
 #timer {
   display: flex;
   text-align: center;
   justify-content: center;
-  top: 30%;
+
   font-size: 28px;
+  padding: 20% 0 10% 0;
 }
 
 #footer {
@@ -94,4 +117,13 @@ overflow: hidden;
   color: #777;
     font-size: 10px;
     line-height: 17px;
+}
+
+@media screen and (max-width: 768px) {
+
+
+h1 {
+  font-size: 36px;
+}
+
 }
